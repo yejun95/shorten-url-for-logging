@@ -5,6 +5,7 @@ import kr.co.shortenurlservice.domain.NotFoundShortenUrlException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -18,7 +19,7 @@ public class GlobalExceptionHandler {
     ) {
         // 개발자에게 알려줄 수 있는 수단 필요
         // 서버 로직상 shortenUrlKey를 만들지 못하는 것이므로 치명적
-        log.error("shortUrl을 생성하지 못했습니다.");
+        log.error("단축 URL 자원이 부족합니다.");
         return new ResponseEntity<>("단축 URL 자원이 부족합니다.", HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
