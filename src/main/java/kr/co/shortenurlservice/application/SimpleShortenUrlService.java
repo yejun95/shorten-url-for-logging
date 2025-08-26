@@ -80,6 +80,9 @@ public class SimpleShortenUrlService {
 
             if(null == shortenUrl)
                 return shortenUrlKey;
+
+            // 재시도 warn
+            log.warn("단축 URL 생성 재시도! 재시도 횟수 : {}", count + 1);
         }
 
         throw new LackOfShortenUrlKeyException();
