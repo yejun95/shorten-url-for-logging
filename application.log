@@ -1,28 +1,24 @@
-2025-08-30 16:03:16.660 INFO  [background-preinit]  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
-2025-08-30 16:03:16.695 INFO  [main]  k.c.s.ShortenurlserviceApplication - Starting ShortenurlserviceApplication using Java 17.0.12 with PID 2992 (C:\Users\jun\Desktop\code\shorten-url-for-logging\target\classes started by jun in C:\Users\jun\Desktop\code\shorten-url-for-logging)
-2025-08-30 16:03:16.695 DEBUG [main]  k.c.s.ShortenurlserviceApplication - Running with Spring Boot v3.0.1, Spring v6.0.3
-2025-08-30 16:03:16.696 INFO  [main]  k.c.s.ShortenurlserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-30 16:03:17.332 INFO  [main]  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-08-30 16:03:17.339 INFO  [main]  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-08-30 16:03:17.340 INFO  [main]  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-30 16:03:17.340 INFO  [main]  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.4]
-2025-08-30 16:03:17.407 INFO  [main]  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-30 16:03:17.408 INFO  [main]  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 679 ms
-2025-08-30 16:03:17.438 DEBUG [main]  k.c.s.presentation.LoggingFilter - Filter 'loggingFilter' configured for use
-2025-08-30 16:03:17.655 INFO  [main]  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-08-30 16:03:17.670 INFO  [main]  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-08-30 16:03:17.676 INFO  [main]  k.c.s.ShortenurlserviceApplication - Started ShortenurlserviceApplication in 1.249 seconds (process running for 1.946)
-2025-08-30 16:03:24.649 INFO  [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
-2025-08-30 16:03:24.683 INFO  [main] k.c.s.ShortenurlserviceApplication - Starting ShortenurlserviceApplication using Java 17.0.12 with PID 1648 (C:\Users\jun\Desktop\code\shorten-url-for-logging\target\classes started by jun in C:\Users\jun\Desktop\code\shorten-url-for-logging)
-2025-08-30 16:03:24.684 DEBUG [main] k.c.s.ShortenurlserviceApplication - Running with Spring Boot v3.0.1, Spring v6.0.3
-2025-08-30 16:03:24.685 INFO  [main] k.c.s.ShortenurlserviceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-30 16:03:25.308 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2025-08-30 16:03:25.315 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-08-30 16:03:25.316 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-30 16:03:25.316 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.4]
-2025-08-30 16:03:25.382 INFO  [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-30 16:03:25.382 INFO  [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 666 ms
-2025-08-30 16:03:25.411 DEBUG [main] k.c.s.presentation.LoggingFilter - Filter 'loggingFilter' configured for use
-2025-08-30 16:03:25.627 INFO  [main] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-08-30 16:03:25.645 INFO  [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2025-08-30 16:03:25.651 INFO  [main] k.c.s.ShortenurlserviceApplication - Started ShortenurlserviceApplication in 1.258 seconds (process running for 1.959)
+2025-09-01 23:46:00.146 INFO  [http-nio-8080-exec-5] k.c.s.a.SimpleShortenUrlService - shortenUrl 생성: ShortenUrl(originalUrl=https://www.inflearn.com/, shortenUrlKey=Vy9QUa2R, redirectCount=0)
+2025-09-01 23:46:00.148 TRACE [http-nio-8080-exec-5] k.c.s.presentation.LoggingFilter - POST /shortenUrl | Body: {
+    "originalUrl": "https://www.inflearn.com/"
+}
+2025-09-01 23:46:02.426 INFO  [http-nio-8080-exec-6] k.c.s.a.SimpleShortenUrlService - shortenUrl 생성: ShortenUrl(originalUrl=https://www.inflearn.com/, shortenUrlKey=sgRm5NQp, redirectCount=0)
+2025-09-01 23:46:02.427 TRACE [http-nio-8080-exec-6] k.c.s.presentation.LoggingFilter - POST /shortenUrl | Body: {
+    "originalUrl": "https://www.inflearn.com/"
+}
+2025-09-01 23:46:03.126 INFO  [http-nio-8080-exec-7] k.c.s.a.SimpleShortenUrlService - shortenUrl 생성: ShortenUrl(originalUrl=https://www.inflearn.com/, shortenUrlKey=J8e5NYma, redirectCount=0)
+2025-09-01 23:46:03.128 TRACE [http-nio-8080-exec-7] k.c.s.presentation.LoggingFilter - POST /shortenUrl | Body: {
+    "originalUrl": "https://www.inflearn.com/"
+}
+2025-09-01 23:46:03.766 INFO  [http-nio-8080-exec-8] k.c.s.a.SimpleShortenUrlService - shortenUrl 생성: ShortenUrl(originalUrl=https://www.inflearn.com/, shortenUrlKey=tdYV9BJR, redirectCount=0)
+2025-09-01 23:46:03.768 TRACE [http-nio-8080-exec-8] k.c.s.presentation.LoggingFilter - POST /shortenUrl | Body: {
+    "originalUrl": "https://www.inflearn.com/"
+}
+2025-09-01 23:46:04.342 INFO  [http-nio-8080-exec-9] k.c.s.a.SimpleShortenUrlService - shortenUrl 생성: ShortenUrl(originalUrl=https://www.inflearn.com/, shortenUrlKey=ExSx8xmR, redirectCount=0)
+2025-09-01 23:46:04.344 TRACE [http-nio-8080-exec-9] k.c.s.presentation.LoggingFilter - POST /shortenUrl | Body: {
+    "originalUrl": "https://www.inflearn.com/"
+}
+2025-09-01 23:46:05.115 INFO  [http-nio-8080-exec-10] k.c.s.a.SimpleShortenUrlService - shortenUrl 생성: ShortenUrl(originalUrl=https://www.inflearn.com/, shortenUrlKey=cw8WrSSP, redirectCount=0)
+2025-09-01 23:46:05.116 TRACE [http-nio-8080-exec-10] k.c.s.presentation.LoggingFilter - POST /shortenUrl | Body: {
+    "originalUrl": "https://www.inflearn.com/"
+}
